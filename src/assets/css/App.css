@@ -1,0 +1,773 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    overflow: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Regles generales */
+*, *:after, *:before {
+    box-sizing: border-box;
+  }
+  
+  img{vertical-align: middle;}
+  
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+
+}
+
+header{
+    padding-top: 5%;
+    padding-left: 10%;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    background: url('../img/background.png') center;
+    background-size: cover;
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+.header-logo{
+  width: 15%;
+}
+nav{
+    -webkit-box-shadow: 0px 28px 70px -23px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 28px 70px -23px rgba(0,0,0,0.39);
+    box-shadow: 0px 28px 70px -23px rgba(0,0,0,0.39);
+}
+
+header section{
+    width: 30%;
+}
+
+header section h1{
+    font-weight: 900;
+    font-size: 4vw;
+    margin: 3%;
+}
+
+header section div{
+
+    margin: 3%;
+    font-size: 1.2vw;
+    color: rgba(0, 0, 0, 0.483);
+}
+
+.button-accueil{
+    border: none;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    background-color: #00a99d;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    transform: all 300ms ease;
+    -webkit-box-shadow: -20px 31px 63px -20px rgba(0,0,0,0.75);
+-moz-box-shadow: -20px 31px 63px -20px rgba(0,0,0,0.75);
+box-shadow: -20px 31px 63px -20px rgba(0,0,0,0.75);
+}
+
+.button-accueil:hover{
+    text-decoration: none;
+    background-color: #4ec9c1;
+}
+
+.react-datepicker__month-container {
+    width: 100%;
+}
+
+.calendarPerso {
+    width: 100%;
+    border: none;
+}
+
+.react-datepicker__header{
+    border: none;
+}
+
+
+/******************************** LOGIN **********************************/
+
+.login{
+    -webkit-box-shadow: 0px 28px 70px -23px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 28px 70px -23px rgba(0,0,0,0.39);
+    box-shadow: 0px 28px 70px -23px rgba(0,0,0,0.39);
+    background-color: white;
+    width: 50%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.login div{
+    width: 40%;
+}
+
+.login div h2{
+    color: black;
+    font-weight: 700;
+    font-size: 1.5vw;
+    margin-bottom: 10%;
+}
+
+
+.login form input{
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 3%;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.129);
+    height: 40px;
+    width: 72%;
+}
+
+.login form p{
+    font-size: 0.8vw;
+}
+
+.login form p a{
+    color: #00a99d;
+}
+
+.login form button{
+    margin-bottom: 8%;
+    background-color: #00a99d;
+    height: 40px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    box-shadow: none;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    width: 72%;
+}
+
+/******************************************************************/
+/******************************** CONNECTED **********************************/
+
+
+.connected{
+    height: 30vh;
+    background: url('../img/fond.png')center;
+    background-size: cover;
+}
+
+.connected h1{
+    font-size: 2.5vw;
+    font-weight: 700;
+    widows: 30%;
+    text-align: left;
+    color: rgb(39, 50, 78);
+}
+
+
+.content {
+    
+    width: 100vw;
+    height: 55vh;
+    padding: 20px;
+    display: flex;
+}
+
+.content h2{
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.date{
+    margin: 20px;
+    padding: 30px;
+    min-width: 25%;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+}
+
+.grosWid{
+    width: 100% !important;
+    transition: all 300ms ease;
+}
+
+.grosWid:hover{
+    background-color: #00a99d !important;
+}
+
+.menu{
+    margin: 20px;
+    padding: 30px;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+    /* width: 33%; */
+    overflow-y:scroll;
+    min-width: 30%;
+}
+
+.bar{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.422);
+}
+
+.commande{
+    padding: 30px;
+    margin: 20px;
+    background-color: rgb(240, 240, 240);
+    width: 33%;
+    height: 100%;
+    transition: all 500ms ease;
+}
+
+.type {
+    padding: 10px;
+}
+
+.plat{
+    cursor: pointer;
+    padding: 10px;
+    height: 100px;
+    background-color: white;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    transition: all 500ms ease;
+}
+
+.plat:hover{
+
+    background-color: #92cfcb;
+}
+
+.image-plat{
+    width: 90px;
+    height: 100%;
+    border-radius: 50px;
+
+}
+
+.texte-plat {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    padding-left: 20px;
+}
+
+.texte-plat h4{
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.texte-plat ul{
+    display: flex;
+}
+
+.texte-plat ul li{
+    margin-right: 5px;
+    color: rgba(0, 0, 0, 0.455);
+    font-weight: 700;
+    font-size: 0.6vw;
+}
+
+.texte-plat p {
+    margin-bottom: 5px;
+    font-size: 0.9vw;
+}
+
+.plat-commande {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.095);
+    margin-bottom: 10px;
+}
+
+.react-datepicker__day--selected{
+    background-color: #00a99d;
+}
+
+.plat-commande div:first-of-type {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.plat-commande div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.liste-commande {
+    background-color: white;
+    width: 100%;
+    height: 70%;
+    overflow-y:scroll;
+    padding: 10px
+}
+
+.intit-commande{
+    width: 70%;
+}
+
+.intit-commande h3{
+    font-size: 15px;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.intit-commande h4{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.564)
+}
+
+.prix-intit-commande{
+    width: 15%;
+}
+
+.selected {
+    border: solid 2px rgb(88, 119, 170);
+    background-color: rgb(189, 225, 230);
+}
+
+.valider{
+    height: 20%;
+}
+
+.valider form{
+    display: flex;
+    height: 100%;
+    padding: 5px;
+}
+
+.valider form input{
+    height: 50%;
+    width: 20%;
+    margin-right: 10px;
+    border: none;
+}
+
+.valider form div{
+    height: 50%;
+    width: 30%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.valider form button{
+    height: 50%;
+    width: 50%;
+    margin-right: 10px;
+    border: none;
+    text-decoration: none;
+    background-color: #00a99d;
+    color: white;
+}
+
+.calendarPerso {
+    text-align: center;
+}
+
+/***************************** LIVRAISON ********************************/
+
+
+.livraison{
+    background: url(../img/commander.png) center !important;
+
+}
+
+.livraison input{
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    padding: 20px;
+    background-color:rgba(128, 128, 128, 0.075);
+    margin-bottom: 10px;
+}
+
+.livraison button{
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: #6fcfc8;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.livraison button:hover{
+    background-color: #8fdfd9;
+}
+
+
+.livraison section{
+    width: 40%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+}
+
+.livraison section h1{
+    color: #6fcfc8 ;
+}
+
+.livraison section nav {
+    box-shadow: none;
+}
+
+.livraison section ul {
+    height: 30vh !important;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.livraison section ul li {
+    background-color: rgba(128, 128, 128, 0.075);
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+    height: 70px;
+}
+
+.livraison section ul li h3 {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.728);
+}
+
+.prix {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prix p{
+    font-weight: 700;
+    color: #00a99d;
+}
+
+.prix p strong{
+    font-weight: 700;
+    color: #000000;
+}
+
+.prix h3{
+    font-weight: 700;
+}
+
+
+
+.pizz{
+    top: 0;
+    width: 40%;
+    position: absolute;
+}
+
+.contain-item{
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.item h2{
+    margin-top: 20px;
+    font-size: 1.7em;
+}
+
+.item h2 strong{
+    font-weight: 700;
+}
+
+.item ul{
+   display: flex;
+   margin-bottom: 10px;
+}
+
+.item ul li{
+    margin-right: 5px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.455);
+ }
+
+.image-item{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 50%;
+}
+
+.close{
+    cursor: pointer;
+    opacity: 1;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: calc(50% - 25px);
+    top: 32%;
+}
+
+.close img{
+    width: 50%;
+}
+
+@media screen and (max-width: 640px) {
+    .livraison section{
+        margin-top:80%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+    }
+
+.item{
+        width: 90%;
+    }
+
+    .livraison section h1{
+        font-size: 1.7em;
+    }
+
+    .livraison section h3{
+        font-size: 4em;
+    }
+
+    .livraison section p{
+        font-size: 3em;
+    }
+
+    .livraison section input{
+        font-size: 4em;
+    }
+
+    .commande {
+        min-height: 300px;
+    }
+    .texte-plat h4 {
+        font-size: 0.8em;
+    }
+
+    .texte-plat p {
+        font-size: 0.5em;
+    }
+    .price{
+        font-size: 2em;
+    }
+
+
+    .pizz{
+        top: 0;
+        width: 80%;
+
+    }
+    
+    body {
+        overflow: visible;
+    }
+
+    .navbar-brand{
+        width: 30% !important;
+    }
+
+    header{
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    header section{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.489);
+    }
+
+    header div p{
+        font-size: 1.2rem;
+        color: black;
+    }
+    header button{
+        font-size: 1.2rem;
+        color: black;
+        margin-bottom: 10px;
+    }
+
+    .login{
+        -webkit-box-shadow: 0px 28px 70px -23px rgba(0,0,0,0.39);
+        -moz-box-shadow: 0px 28px 70px -23px rgba(0,0,0,0.39);
+        box-shadow: 0px 28px 70px -23px rgba(0,0,0,0.39);
+        background-color: white;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+    }
+    
+    .login div{
+        width: 70%;
+    }
+    
+    .login div h2{
+        color: black;
+        font-weight: 700;
+        font-size: 6em;
+        margin-bottom: 10%;
+    }
+
+    .login form {
+        width: 100%;
+    }
+
+    .login form p{
+        font-size: 2em;
+    }
+    
+    
+    .login form input{
+        font-size: 4em;
+        padding: 10px;
+        border-radius: 50px;
+        margin-bottom: 3%;
+        border: none;
+        height: 40px;
+        width: 100%;
+    }
+
+    .connected{
+        justify-content: left;
+        background-position-x: -55rem;
+    }
+
+    .connected h1{
+        font-size: 1.2em;
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .content h2 {
+        font-size: 1.5em;
+    }
+
+    .content .date {
+        width: 100%;
+        margin: 0;
+        height: 100vh;
+        margin-bottom: 20px;
+    }
+    .content .menu {
+        width: 100%;
+        margin: 0;
+        overflow-y: visible;
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .content .commande {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+  }
+
+  .nav-link{
+      display: flex;
+  }
+
+  .nav-link button{
+    border: none;
+    background-color: white;
+}
+
+  .nav-link img{
+    margin-right: 15px;
+    }
